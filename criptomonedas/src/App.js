@@ -25,7 +25,7 @@ const Imagen = styled.img`
 `
 
 const Heading = styled.h1`
-    font-family: 'lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #fff;
     text-align: center;
     font-weight: 700;
