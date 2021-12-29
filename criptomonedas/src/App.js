@@ -5,6 +5,7 @@ import Formulario from './components/Formulario';
 
 import styled from '@emotion/styled';
 import ImagenFondo from './img/imagen-criptos.png'
+import Resultado from './components/Resultado';
 
 const Contenedor = styled.div`
     max-width: 900px;
@@ -76,6 +77,8 @@ function App() {
                 <Heading >Cotiza criptomonedas al instante.</Heading>
                 <Formulario
                     setMonedas={setMonedas} />
+
+                {resultado.PRICE && <Resultado resultado={resultado} /> }
             </div>
 
     </Contenedor>
