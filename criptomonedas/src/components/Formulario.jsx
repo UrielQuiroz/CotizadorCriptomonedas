@@ -26,7 +26,8 @@ const InputSubmit = styled.input`
 const Formulario = () => {
 
     const [ crypto, setCrypto ] = useState([]);
-    const [ moneda, SelectMonedas ] = useSelectMonedas('Elije tu moneda', monedas);
+    const [ moneda, SelectMonedas ] = useSelectMonedas('Elige tu moneda', monedas);
+    const [ criptomoneda, SelectCriptomoneda ] = useSelectMonedas('Elige tu criptomoneda', crypto);
 
 
     useEffect( () => {
@@ -53,7 +54,7 @@ const Formulario = () => {
     return (
         <form>
             <SelectMonedas />
-            {moneda}
+            <SelectCriptomoneda />
             <InputSubmit 
                 type="submit"
                 value="Cotizar" />
