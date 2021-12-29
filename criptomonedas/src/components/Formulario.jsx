@@ -25,7 +25,7 @@ const InputSubmit = styled.input`
     }
 `
 
-const Formulario = () => {
+const Formulario = ({setMonedas}) => {
 
     const [ crypto, setCrypto ] = useState([]);
     const [ error, setError ] = useState(false);
@@ -64,7 +64,10 @@ const Formulario = () => {
             return;
         }
         setError(false);
-        console.log('Paso la validacion')
+        setMonedas({
+            moneda,
+            criptomoneda
+        });
     }
 
 
